@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MultimediaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AllFiles">
+    <Key>
+      <PropertyRef Name="FileID" />
+    </Key>
+    <Property Name="FileID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileName" Type="varchar(max)" Nullable="false" />
+    <Property Name="FilePath" Type="varchar(max)" Nullable="false" />
+    <Property Name="FileSize" Type="int" Nullable="false" />
+    <Property Name="FileExtensionID" Type="int" Nullable="false" />
+    <Property Name="FileCreated" Type="datetime" Nullable="false" />
+    <Property Name="FileAdded" Type="datetime" Nullable="false" />
+    <Property Name="FileChanged" Type="datetime" Nullable="false" />
+    <Property Name="FileIsOnDrive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FileExtensions">
+    <Key>
+      <PropertyRef Name="FileExtensionID" />
+    </Key>
+    <Property Name="FileExtensionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileExtensionName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FileTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FileTypes">
+    <Key>
+      <PropertyRef Name="FileTypeID" />
+    </Key>
+    <Property Name="FileTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Findings">
+    <Key>
+      <PropertyRef Name="FindingID" />
+    </Key>
+    <Property Name="FindingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileID" Type="int" Nullable="false" />
+    <Property Name="FindingTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FindingTypes">
+    <Key>
+      <PropertyRef Name="FindingTypeID" />
+    </Key>
+    <Property Name="FindingTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FingingTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Images">
+    <Key>
+      <PropertyRef Name="ImageID" />
+    </Key>
+    <Property Name="ImageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileID" Type="int" Nullable="false" />
+    <Property Name="ImageSize" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ImageViews" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sounds">
+    <Key>
+      <PropertyRef Name="SoundID" />
+    </Key>
+    <Property Name="SoundID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileID" Type="int" Nullable="false" />
+    <Property Name="SoundArtist" Type="nvarchar(max)" />
+    <Property Name="SoundName" Type="nvarchar(max)" />
+    <Property Name="SoundAlbum" Type="nvarchar(max)" />
+    <Property Name="SoundDuration" Type="time" Precision="7" Nullable="false" />
+    <Property Name="SoundViews" Type="int" Nullable="false" />
+    <Property Name="SoundCurrentPosition" Type="time" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Videos">
+    <Key>
+      <PropertyRef Name="VideoID" />
+    </Key>
+    <Property Name="VideoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileID" Type="int" Nullable="false" />
+    <Property Name="VideoDuration" Type="time" Precision="7" Nullable="false" />
+    <Property Name="VideoViews" Type="int" Nullable="false" />
+    <Property Name="VideoCurrentPosition" Type="time" Precision="7" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AllFiles_FileExtensions">
+    <End Role="FileExtensions" Type="Self.FileExtensions" Multiplicity="1" />
+    <End Role="AllFiles" Type="Self.AllFiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FileExtensions">
+        <PropertyRef Name="FileExtensionID" />
+      </Principal>
+      <Dependent Role="AllFiles">
+        <PropertyRef Name="FileExtensionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FileExtenstions_FileTypes">
+    <End Role="FileTypes" Type="Self.FileTypes" Multiplicity="1" />
+    <End Role="FileExtensions" Type="Self.FileExtensions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FileTypes">
+        <PropertyRef Name="FileTypeID" />
+      </Principal>
+      <Dependent Role="FileExtensions">
+        <PropertyRef Name="FileTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Findings_AllFiles">
+    <End Role="AllFiles" Type="Self.AllFiles" Multiplicity="1" />
+    <End Role="Findings" Type="Self.Findings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AllFiles">
+        <PropertyRef Name="FileID" />
+      </Principal>
+      <Dependent Role="Findings">
+        <PropertyRef Name="FileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Findings_FindingTypes">
+    <End Role="FindingTypes" Type="Self.FindingTypes" Multiplicity="1" />
+    <End Role="Findings" Type="Self.Findings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FindingTypes">
+        <PropertyRef Name="FindingTypeID" />
+      </Principal>
+      <Dependent Role="Findings">
+        <PropertyRef Name="FindingTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Images_AllFiles">
+    <End Role="AllFiles" Type="Self.AllFiles" Multiplicity="1" />
+    <End Role="Images" Type="Self.Images" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AllFiles">
+        <PropertyRef Name="FileID" />
+      </Principal>
+      <Dependent Role="Images">
+        <PropertyRef Name="FileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sounds_AllFiles">
+    <End Role="AllFiles" Type="Self.AllFiles" Multiplicity="1" />
+    <End Role="Sounds" Type="Self.Sounds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AllFiles">
+        <PropertyRef Name="FileID" />
+      </Principal>
+      <Dependent Role="Sounds">
+        <PropertyRef Name="FileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Videos_AllFiles">
+    <End Role="AllFiles" Type="Self.AllFiles" Multiplicity="1" />
+    <End Role="Videos" Type="Self.Videos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AllFiles">
+        <PropertyRef Name="FileID" />
+      </Principal>
+      <Dependent Role="Videos">
+        <PropertyRef Name="FileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MultimediaModelStoreContainer">
+    <EntitySet Name="AllFiles" EntityType="Self.AllFiles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FileExtensions" EntityType="Self.FileExtensions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FileTypes" EntityType="Self.FileTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Findings" EntityType="Self.Findings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FindingTypes" EntityType="Self.FindingTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Images" EntityType="Self.Images" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sounds" EntityType="Self.Sounds" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Videos" EntityType="Self.Videos" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AllFiles_FileExtensions" Association="Self.FK_AllFiles_FileExtensions">
+      <End Role="FileExtensions" EntitySet="FileExtensions" />
+      <End Role="AllFiles" EntitySet="AllFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FileExtenstions_FileTypes" Association="Self.FK_FileExtenstions_FileTypes">
+      <End Role="FileTypes" EntitySet="FileTypes" />
+      <End Role="FileExtensions" EntitySet="FileExtensions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Findings_AllFiles" Association="Self.FK_Findings_AllFiles">
+      <End Role="AllFiles" EntitySet="AllFiles" />
+      <End Role="Findings" EntitySet="Findings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Findings_FindingTypes" Association="Self.FK_Findings_FindingTypes">
+      <End Role="FindingTypes" EntitySet="FindingTypes" />
+      <End Role="Findings" EntitySet="Findings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Images_AllFiles" Association="Self.FK_Images_AllFiles">
+      <End Role="AllFiles" EntitySet="AllFiles" />
+      <End Role="Images" EntitySet="Images" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sounds_AllFiles" Association="Self.FK_Sounds_AllFiles">
+      <End Role="AllFiles" EntitySet="AllFiles" />
+      <End Role="Sounds" EntitySet="Sounds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Videos_AllFiles" Association="Self.FK_Videos_AllFiles">
+      <End Role="AllFiles" EntitySet="AllFiles" />
+      <End Role="Videos" EntitySet="Videos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

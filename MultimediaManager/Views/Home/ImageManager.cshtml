@@ -1,0 +1,59 @@
+﻿@model IEnumerable<MultimediaManager.Models.AllFile>
+@{ ViewBag.Title = "ImageManager"; }
+
+<h2>ImageManager</h2>
+
+<div class="row">
+    <div class="col-xs-9">
+        <ul class="list-group">
+            @for(int i = 0; i < ViewBag.ImageCount; i++)
+            {
+                bool level_diff;
+                if (i == 0)
+                {
+                    @: <li class="list-group-item list-group-item-action">@ViewBag.ImagePaths[i]
+                    @: <ul class="list-group">
+                    <li class="list-group-item list-group-item-action" onclick="showImageInfo(@ViewBag.ImageIds[i])"> @ViewBag.ImageNames[i]</li>
+                }
+                if (i != 0 && i < ViewBag.ImageCount - 1)
+                {
+                    level_diff = ViewBag.ImagePaths[i] == ViewBag.ImagePaths[i + 1] ? true : false;
+                    if (level_diff)
+                    {
+                        <li class="list-group-item list-group-item-action" onclick="showImageInfo(@ViewBag.ImageIds[i])"> @ViewBag.ImageNames[i]</li>
+                    }
+                    else
+                    {
+                        <li class="list-group-item list-group-item-action" onclick="showImageInfo(@ViewBag.ImageIds[i])"> @ViewBag.ImageNames[i]</li>
+                        @:</ul>
+                        @:</li>
+                        @:<li class="list-group-item list-group-item-action">@ViewBag.ImagePaths[i + 1]
+                        @:<ul class="list-group">
+
+                    }
+                }
+                if(i == ViewBag.ImageCount - 1)
+                {
+                    <li class="list-group-item list-group-item-action" onclick="showImageInfo(@ViewBag.ImageIds[i])"> @ViewBag.ImageNames[i]</li>
+                        @:</ul>
+                        @:</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="col-xs-3">
+        <label id="fileid" hidden="hidden"></label>
+        <label style="position:fixed">Image name</label><br />
+        <label style="position:fixed" id="filename"></label><br />
+        <label style="position:fixed">Image path</label><br />
+        <label id="filepath" style="position:fixed"></label><br />
+        <label style="position:fixed">Image size</label><br />
+        <label id="filesize" style="position:fixed"></label><br />
+        <label style="position:fixed">Image resilution</label><br />
+        <label id="fileresolution" style="position:fixed"></label><br /><br />
+        <button class="btn-info" style="position:fixed" @*onclick="@Html.Action("moveFile", new { fileID=})"*@>View</button><br /><br />
+        <button class="btn-warning" style="position:fixed">Find image</button>
+    </div>
+</div>
+<script src="~/Scripts/get_info.js"></script>
+

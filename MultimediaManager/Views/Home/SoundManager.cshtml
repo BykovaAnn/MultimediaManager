@@ -1,0 +1,71 @@
+﻿@model IEnumerable<MultimediaManager.Models.AllFile>
+@{
+    ViewBag.Title = "SoundManager";
+}
+
+<h2>SoundManager</h2>
+
+<div class="row">
+    <div class="col-xs-9">
+        <ul class="list-group">
+            @for (int i = 0; i < ViewBag.SoundCount; i++)
+            {
+                bool level_diff;
+                if (i == 0)
+                {
+                    @:<li class="list-group-item list-group-item-action"> @ViewBag.SoundPaths[i]
+                    @: <ul class="list-group">
+                    <li class="list-group-item list-group-item-action" onclick="showSoundInfo(@ViewBag.SoundIds[i])"> @ViewBag.SoundNames[i]</li>
+                }
+                if (i != 0 && i < ViewBag.SoundCount - 1)
+                {
+                    level_diff = ViewBag.SoundPaths[i] == ViewBag.SoundPaths[i + 1] ? true : false;
+                    if (level_diff)
+                    {
+                        <li class="list-group-item list-group-item-action" onclick="showSoundInfo(@ViewBag.SoundIds[i])"> @ViewBag.SoundNames[i]</li>
+                    }
+                    else
+                    {
+                        <li class="list-group-item list-group-item-action" onclick="showSoundInfo(@ViewBag.SoundIds[i])"> @ViewBag.SoundNames[i]</li>
+                        @:</ul>
+                        @:</li>
+                        @:<li class="list-group-item list-group-item-action">
+                        @ViewBag.SoundPaths[i + 1]
+                        @:<ul class="list-group">
+                    }
+                }
+                if (i == ViewBag.SoundCount - 1)
+                {
+                    <li class="list-group-item list-group-item-action" onclick="showSoundInfo(@ViewBag.SoundIds[i])"> @ViewBag.SoundNames[i]</li>
+                    @:</ul>
+                    @:</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="col-xs-3">
+        <label id="fileid" hidden="hidden"></label>
+        <label style="position:fixed">Sound name</label><br />
+        <label style="position:fixed" id="filename"></label><br />
+        <label style="position:fixed">Sound path</label><br />
+        <label id="filepath" style="position:fixed"></label><br />
+        <label style="position:fixed">Sound size</label><br />
+        <label id="filesize" style="position:fixed"></label><br />
+        <label style="position:fixed">Sound duration</label><br />
+        <label id="fileduration" style="position:fixed"></label><br />
+        <label style="position:fixed">Sound listened</label><br />
+        <label id="filecuurpos" style="position:fixed"></label><br />
+        <label style="position:fixed">Sound Title</label><br />
+        <label id="filetitle" style="position:fixed"></label><br />
+        <label style="position:fixed">Sound Artist</label><br />
+        <label id="fileartist" style="position:fixed"></label><br />
+        <label style="position:fixed">Sound Album</label><br />
+        <label id="filealbum" style="position:fixed"></label><br /><br />
+        <button class="btn-info" style="position:fixed" @*onclick="@Html.Action("moveFile", new { fileID=})"*@>View</button><br /><br />
+        <button class="btn-warning" style="position:fixed">Find Sound</button><br /><br />
+        <button class="btn-warning" style="position:fixed">Find Artist</button><br /><br />
+        <button class="btn-warning" style="position:fixed">Find Album</button><br /><br />
+        <button class="btn-warning" style="position:fixed">Find Lyrics</button>
+    </div>
+</div>
+<script src="~/Scripts/get_info.js"></script>

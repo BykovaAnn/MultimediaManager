@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "VideoManager";
+}
+
+<h2>VideoManager</h2>
+<div class="row">
+    <div class="col-xs-9">
+        <ul class="list-group">
+            @for (int i = 0; i < ViewBag.VideoCount; i++)
+            {
+                bool level_diff;
+                if (i == 0)
+                {
+                    @:<li class="list-group-item list-group-item-action"> @ViewBag.VideoPaths[i]
+                    @: <ul class="list-group">
+                    <li class="list-group-item list-group-item-action" onclick="showVideoInfo(@ViewBag.VideoIds[i])"> @ViewBag.VideoNames[i]</li>
+                }
+                if (i != 0 && i < ViewBag.VideoCount - 1)
+                {
+                    level_diff = ViewBag.VideoPaths[i] == ViewBag.VideoPaths[i + 1] ? true : false;
+                    if (level_diff)
+                    {
+                        <li class="list-group-item list-group-item-action" onclick="showVideoInfo(@ViewBag.VideoIds[i])"> @ViewBag.VideoNames[i]</li>
+                    }
+                    else
+                    {
+                        <li class="list-group-item list-group-item-action" onclick="showVideoInfo(@ViewBag.VideoIds[i])"> @ViewBag.VideoNames[i]</li>
+                        @:</ul>
+                        @:</li>
+                        @:<li class="list-group-item list-group-item-action">
+                        @ViewBag.VideoPaths[i + 1]
+                        @:<ul class="list-group">
+                    }
+                }
+                if (i == ViewBag.VideoCount - 1)
+                {
+                    <li class="list-group-item list-group-item-action" onclick="showVideoInfo(@ViewBag.VideoIds[i])"> @ViewBag.VideoNames[i]</li>
+                    @:</ul>
+                    @:</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="col-xs-3">
+        <label id="fileid" hidden="hidden"></label>
+        <label style="position:fixed">Video name</label><br />
+        <label style="position:fixed" id="filename"></label><br />
+        <label style="position:fixed">Video path</label><br />
+        <label id="filepath" style="position:fixed"></label><br />
+        <label style="position:fixed">Video size</label><br />
+        <label id="filesize" style="position:fixed"></label><br />
+        <label style="position:fixed">Video duration</label><br />
+        <label id="fileduration" style="position:fixed"></label><br />
+        <label style="position:fixed">Video viewed</label><br />
+        <label id="filecuurpos" style="position:fixed"></label><br /><br />
+        <button class="btn-info" style="position:fixed" @*onclick="@Html.Action("moveFile", new { fileID=})"*@>View</button><br /><br />
+        <button class="btn-warning" style="position:fixed">Find Video</button><br /><br />
+    </div>
+</div>
+<script src="~/Scripts/get_info.js"></script>

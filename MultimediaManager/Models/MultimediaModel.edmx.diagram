@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c87d219f603d46e984771dc44ce3fe42" Name="Diagram1">
+        <EntityTypeShape EntityType="MultimediaModel.AllFile" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultimediaModel.FileExtension" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultimediaModel.FileType" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultimediaModel.Finding" Width="1.5" PointX="10.5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultimediaModel.FindingType" Width="1.5" PointX="8.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultimediaModel.Image" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultimediaModel.Sound" Width="1.5" PointX="7.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultimediaModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultimediaModel.Video" Width="1.5" PointX="7.5" PointY="11.75" IsExpanded="true" />
+        <AssociationConnector Association="MultimediaModel.FK_AllFiles_FileExtensions" ManuallyRouted="false" />
+        <AssociationConnector Association="MultimediaModel.FK_Findings_AllFiles" ManuallyRouted="false" />
+        <AssociationConnector Association="MultimediaModel.FK_Images_AllFiles" ManuallyRouted="false" />
+        <AssociationConnector Association="MultimediaModel.FK_Sounds_AllFiles" ManuallyRouted="false" />
+        <AssociationConnector Association="MultimediaModel.FK_Videos_AllFiles" ManuallyRouted="false" />
+        <AssociationConnector Association="MultimediaModel.FK_FileExtenstions_FileTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MultimediaModel.FK_Findings_FindingTypes" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,130 @@
+﻿@using MultimediaManager.Models
+@{
+    ViewBag.Title = "ReportUsage";
+}
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <form class="form-horizontal" role="form">
+            <fieldset>
+
+                <legend>Program Usage Report</legend>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Files in Database</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.TotalFiles
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Images in Database</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.TotalImages 
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Sounds in Database</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.TotalSounds
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Videos in Database</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.TotalVideos 
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Image Views</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.TotalImageViews
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Sounds Views</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.TotalSoundViews
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Videos Views</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.TotalVideoViews
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Top Viewing Images</label>
+                    <div class="col-sm-8 ">
+                        @foreach (AllFile file in @ViewBag.TopImageViews)
+                        {
+                            @file.FilePath
+                            @file.FileName
+                            <br />
+                        }
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Top Viewing Sounds</label>
+                    <div class="col-sm-8 ">
+                        @foreach (AllFile file in @ViewBag.TopSoundViews)
+                        {
+                            @file.FilePath
+                            @file.FileName
+                            <br />
+                        }
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Top Viewing Videos</label>
+                    <div class="col-sm-8 ">
+                        @foreach (AllFile file in @ViewBag.TopVideoViews)
+                        {
+                            @file.FilePath
+                            @file.FileName
+                            <br />
+                        }
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Unheard Sounds</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.ProcessingSoundsCount
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Unreviewed Videos</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.ProcessingVideosCount
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Heard Sounds Duration</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.TimeSound
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="textinput">Total Viewed Videos Duration</label>
+                    <div class="col-sm-8 ">
+                        @ViewBag.TimeVideo
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div><!-- /.col-lg-12 -->
+</div><!-- /.row -->
+

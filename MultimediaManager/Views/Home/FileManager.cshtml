@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "All Files";
+}
+
+<h2>All multimedia files on drive D:\</h2>
+
+<div class="row">
+    <div class="col-xs-9">
+        <ul class="list-group">
+            @for (int i = 0; i < ViewBag.MMTreeViewSize; i++)
+            {
+                int level_diff;
+                if (i != ViewBag.MMTreeViewSize - 1)
+                {
+                    level_diff = ViewBag.MMTreeViewLevels[i + 1] - ViewBag.MMTreeViewLevels[i];
+                }
+                else
+                {
+                    level_diff = 0 - ViewBag.MMTreeViewLevels[i];
+                }
+                if (level_diff == 0)
+                {
+                    if (ViewBag.MMTreeViewHrefs[i] == "")
+                    {
+                        <li class="list-group-item list-group-item-action"> @ViewBag.MMTreeViewNames[i]</li>
+                    }
+                    else
+                    {
+                        <li class="list-group-item list-group-item-action" onclick="showInfo(@ViewBag.MMTreeViewIds[i])"> <a href="@ViewBag.MMTreeViewHrefs[i]">@ViewBag.MMTreeViewNames[i]</a></li>
+                    }
+                }
+                if (level_diff > 0)
+                {
+                    if (ViewBag.MMTreeViewHrefs[i] == "")
+                    {
+                        @: <li class="list-group-item list-group-item-action"> 
+                        @ViewBag.MMTreeViewNames[i]
+                    }
+                    else
+                    {
+                        @:<li class="list-group-item list-group-item-action" onclick="showInfo('@ViewBag.MMTreeViewIds[i]')">
+                        <a href="@ViewBag.MMTreeViewHrefs[i]">@ViewBag.MMTreeViewNames[i]</a>
+                    }
+                    for (int j = 0; j < level_diff; j++)
+                    {
+                        @:<ul class="list-group">
+                    }
+                }
+                if (level_diff < 0)
+                {
+                    level_diff = -level_diff;
+                    if (ViewBag.MMTreeViewHrefs[i] == "")
+                    {
+                        <li class="list-group-item list-group-item-action"> @ViewBag.MMTreeViewNames[i]</li>
+                    }
+                    else
+                    {
+                        <li class="list-group-item list-group-item-action" onclick="showInfo('@ViewBag.MMTreeViewIds[i]')"> <a href="@ViewBag.MMTreeViewHrefs[i]">@ViewBag.MMTreeViewNames[i]</a></li>
+                    }
+                    for (int j = 0; j < level_diff; j++)
+                    {
+                        @:</ul>
+                        @:</li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+    <div class="col-xs-3">
+        <label id = "fileid" hidden="hidden"></label>
+        <label style="position:fixed">File name</label><br />
+        <label style="position:fixed" id="filename"></label><br />
+        <label style="position:fixed">File path</label><br />
+        <label id="filepath" style="position:fixed"></label><br />
+        <label style="position:fixed">File size</label><br />
+        <label id="filesize" style="position:fixed"></label><br />
+        <label style="position:fixed">File extension</label><br />
+        <label id="fileextension" style="position:fixed"></label><br />
+        <label style="position:fixed">File type</label><br />
+        <label id="filetype" style="position:fixed"></label><br />
+        <label style="position:fixed">File created</label><br />
+        <label id="filecreated" style="position:fixed"></label><br />
+        <label style="position:fixed">File changed</label><br />
+        <label id="filechanged" style="position:fixed"></label><br />
+        <label style="position:fixed">File added</label><br />
+        <label id="fileadded" style="position:fixed"></label><br /><br />
+        <button class="btn-info" style="position:fixed" @*onclick="@Html.Action("moveFile", new { fileID=})"*@>Move</button><br /><br />
+        <button class="btn-danger" style="position:fixed">Delete</button>
+    </div>
+</div>
+
+<script src="~/Scripts/for_tree.js"></script>

@@ -1,0 +1,143 @@
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\csc.exe
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\vbc.exe
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\MultimediaManager.dll.config
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\MultimediaManager.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\MultimediaManager.pdb
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\Antlr3.Runtime.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\EntityFramework.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\Newtonsoft.Json.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Helpers.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Mvc.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Optimization.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Razor.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\WebGrease.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\EntityFramework.xml
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Helpers.xml
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Mvc.xml
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Optimization.xml
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Razor.xml
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.xml
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\Antlr3.Runtime.pdb
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\Newtonsoft.Json.xml
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.pdb
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\policy.2.0.taglib-sharp.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\taglib-sharp.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\bin\policy.2.0.taglib-sharp.config
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\obj\Debug\Interop.WMPLib.dll
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.csproj.ResolveComReference.cache
+C:\Users\Ann\Documents\Visual Studio 2015\Projects\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.csprojResolveAssemblyReference.cache
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\csc.exe
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\vbc.exe
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\VBCSCompiler.exe
+D:\Projects\MultimediaManager\MultimediaManager\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\MultimediaManager\MultimediaManager\bin\MultimediaManager.dll.config
+D:\Projects\MultimediaManager\MultimediaManager\bin\MultimediaManager.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\MultimediaManager.pdb
+D:\Projects\MultimediaManager\MultimediaManager\bin\Antlr3.Runtime.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\EntityFramework.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\Newtonsoft.Json.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\policy.2.0.taglib-sharp.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Helpers.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Mvc.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Optimization.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Razor.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Razor.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\taglib-sharp.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\WebGrease.dll
+D:\Projects\MultimediaManager\MultimediaManager\bin\EntityFramework.xml
+D:\Projects\MultimediaManager\MultimediaManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Helpers.xml
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Mvc.xml
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Optimization.xml
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.Razor.xml
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.xml
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Razor.xml
+D:\Projects\MultimediaManager\MultimediaManager\bin\Antlr3.Runtime.pdb
+D:\Projects\MultimediaManager\MultimediaManager\bin\Newtonsoft.Json.xml
+D:\Projects\MultimediaManager\MultimediaManager\bin\policy.2.0.taglib-sharp.config
+D:\Projects\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.csprojResolveAssemblyReference.cache
+D:\Projects\MultimediaManager\MultimediaManager\obj\Debug\Interop.WMPLib.dll
+D:\Projects\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.csproj.ResolveComReference.cache
+D:\Projects\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.csproj.CoreCompileInputs.cache
+D:\Projects\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.dll
+D:\Projects\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.pdb
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\csc.exe
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\vbc.exe
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\MultimediaManager.dll.config
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\MultimediaManager.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\MultimediaManager.pdb
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\Antlr3.Runtime.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\EntityFramework.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\Newtonsoft.Json.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\policy.2.0.taglib-sharp.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.Helpers.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.Mvc.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.Optimization.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.Razor.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\taglib-sharp.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\WebGrease.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\EntityFramework.xml
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.Helpers.xml
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.Mvc.xml
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.Optimization.xml
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.Razor.xml
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.xml
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\Antlr3.Runtime.pdb
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\Newtonsoft.Json.xml
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\bin\policy.2.0.taglib-sharp.config
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.csprojResolveAssemblyReference.cache
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\obj\Debug\Interop.WMPLib.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.csproj.ResolveComReference.cache
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.csproj.CoreCompileInputs.cache
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.dll
+C:\Users\Ann\Desktop\MultimediaManager\MultimediaManager\obj\Debug\MultimediaManager.pdb
